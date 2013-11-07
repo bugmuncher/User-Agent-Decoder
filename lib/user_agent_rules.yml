@@ -1,0 +1,144 @@
+os:
+  android: 
+    name: Android
+    regex: ['Android(?: ([\d\.]+))?']
+  blackberry: 
+    name: BlackBerry
+    regex: ['BlackBerry\w+\/([0-9\.]+)?', 'BlackBerry;.+?Version\/([0-9\.]+)?', 'PlayBook;.+?Version\/([0-9\.]+)?', 'BB10;.+?Version\/([0-9\.]+)?']
+  ios: 
+    name: Apple iOS
+    regex: ['(?:ip(?:[ao]d|hone))(?: Simulator)?;.+?OS ([\d_]+)?']
+  linux: 
+    name: Linux
+    regex: ['X11.+?(i686|x86_64)']
+  mac: 
+    name: Apple OS X
+    regex: ['Macintosh.+?OS X ?([\w\.]+)?']
+  symbian: 
+    name: Nokia Symbian
+    regex: ['Symbian', 'SymbOS', 'S60']
+  wii:
+    name: Nintendo Wii
+    regex: ['Nintendo Wii; U; ; 2047-7']
+  windows:
+    name: Microsoft Windows
+    regex: ['Windows NT ([\d\.]+)?']
+  windows_phone: 
+    name: Microsoft Windows Phone
+    regex: ['Windows Phone(?: OS)? ([\d\.]+)?']
+
+browsers:
+  blackberry_browser:
+    name: BlackBerry Browser
+    regex: ['MIDP-([0-9\.]+)?', 'AppleWebKit\/([0-9\.]+)?']
+  chrome:
+    name: Chrome
+    regex: ['Chrome(?:frame)?\/([\d\.]+)?', 'CriOS\/([0-9\.]+)?', 'Android.+?Apple ?WebKit.+?Version\/([\d\.]+)']
+  firefox:
+    name: Firefox
+    regex: ['Firefox\/([\d\.]+)?']
+  flock:
+    name: Flock
+    regex: ['Flock\/([\w\.]+)?']
+  mercury:
+    name: Mercury
+    regex: ['Mercury\/([\d\.]+)?']
+  msie: 
+    name: Internet Explorer
+    regex: ['MSIE ([\d\.]+)?', 'Trident.+?rv:([\d\.]+)?']
+  nokia_browser:
+    name: Nokia Browser
+    regex: ['Nokia.*?\/([0-9\.]+)?', 'AppleWebKit\/([0-9\.]+)?']
+  opera:
+    name: Opera
+    regex: ['Opera\/9\.80.+?Version\/([0-9\.]+)?', 'Opera[\/ ]([0-9\.]+)?']
+  opera_mini:
+    name: Opera Mini
+    regex: ['Opera\/9\.80.+?Opera Mini\/([0-9\.]+)?']
+  safari:
+    name: Safari
+    regex: ['Version\/([\d\.]+)?.+?Safari', 'Safari\/([\d\.]+)?']
+  mobile_safari:
+    name: Safari
+    regex: ['AppleWebKit(?:\/([\d\.]+))?']
+
+# Opera first as it can spoof
+# Flock before firefox and chrome otherwise it can be reckognised as them
+# Chrome before safari as chrome user agent includes Safari keyword
+# Mercury before safari as mercury user agent includes Safari keyword
+os_browsers:
+  android: [opera, chrome, firefox]
+  blackberry: [opera, blackberry_browser]
+  ios: [opera, chrome, firefox, mercury, safari, mobile_safari]
+  linux: [opera, flock, chrome, firefox]
+  mac: [opera, flock, chrome, firefox, safari]
+  symbian: [opera, nokia_browser]
+  windows: [opera, flock, chrome, firefox, msie, safari]
+  windows_phone: [msie]
+
+os_version_names:
+  windows: 
+    -
+      version: '3\.'
+      name: 'Windows NT'
+    -
+      version: '4\.0'
+      name: 'Windows 95'
+    -
+      version: '4\.1'
+      name: 'Windows 98'
+    -
+      version: '4\.9'
+      name: 'Windows Millenium'
+    -
+      version: '5\.0'
+      name: 'Windows 2000'
+    -
+      version: '5\.1'
+      name: 'Windows XP'
+    -
+      version: '5\.2'
+      name: 'Windows Server 2003'
+    -
+      version: '6\.0'
+      name: 'Windows Vista'
+    -
+      version: '6\.1'
+      name: 'Windows 7'
+    -
+      version: '6\.2'
+      name: 'Windows 8'
+    -
+      version: '6\.3'
+      name: 'Windows 8.1'
+  mac:
+    -
+      version: '10\.0'
+      name: 'Cheeta'
+    -
+      version: '10\.1'
+      name: 'Puma'
+    -
+      version: '10\.2'
+      name: 'Jaguar'
+    -
+      version: '10\.3'
+      name: 'Panther'
+    -
+      version: '10\.4'
+      name: 'Tiger'
+    -
+      version: '10\.5'
+      name: 'Leopard'
+    - 
+      version: '10\.6'
+      name: 'Snow Leopard'
+    -
+      version: '10\.7'
+      name: 'Lion'
+    -
+      version: '10\.8'
+      name: 'Mountain Lion'
+    -
+      version: '10\.9'
+      name: 'Mavericks'
