@@ -1,45 +1,82 @@
 os:
+  # Needs to be at top as it sometimes spoofs as android or os x
+  fire_os:
+    name: Amazon Fire OS
+    regex: ['Silk\/(?:[0-9\.]+)']
   android: 
     name: Android
     regex: ['Android(?: ([\d\.]+))?']
+  bada:
+    name: Samsung Bada
+    regex: ['Bada(?:\/([0-9\.]+))?']
   blackberry: 
     name: BlackBerry
-    regex: ['BlackBerry\w+\/([0-9\.]+)?', 'BlackBerry;.+?Version\/([0-9\.]+)?', 'PlayBook;.+?Version\/([0-9\.]+)?', 'BB10;.+?Version\/([0-9\.]+)?']
+    regex: ['BlackBerry\w+\/([0-9\.]+)?', 'BlackBerry;.+?Version\/([0-9\.]+)?', 'BB10;.+?Version\/([0-9\.]+)?']
+  blackberry_playbook:
+    name: BlackBerry PlayBook
+    regex: ['PlayBook; U; RIM Tablet OS ([0-9\.]+)']
+  chrome_os:
+    name: Chrome OS
+    regex: ['CrOS.+?Chrome\/([\d\.]+)']
   ios: 
     name: Apple iOS
     regex: ['(?:ip(?:[ao]d|hone))(?: Simulator)?;.+?OS ([\d_]+)?']
-  linux: 
-    name: Linux
-    regex: ['X11.+?(i686|x86_64)']
+  java_me:
+    name: Java ME
+    regex: ['J2ME\/MIDP']
   mac: 
     name: Apple OS X
     regex: ['Macintosh.+?OS X ?([\w\.]+)?']
+  meego:
+    name: MeeGo
+    regex: ['MeeGo']
   symbian: 
     name: Nokia Symbian
-    regex: ['Symbian', 'SymbOS', 'S60']
+    regex: ['Series 60', 'Symbian', 'SymbOS', 'S60']
+  red_hat_linux:
+    name: Red Hat Linux
+    regex: ['(i686|x86_64).+?Red Hat']
+  ubuntu_linux:
+    name: Ubuntu Linux
+    regex: ['Ubuntu\/([\d\.]+)', '(i686|x86_64).+?Ubuntu']
+  playstation_3:
+    name: Sony Playstation 3
+    regex: ['PLAYSTATION 3 ([\d\.]+)']
+  web_os:
+    name: WebOS
+    regex: ['webOS/([\d\.]+)', 'hpwOS/([\d\.]+)']
   wii:
     name: Nintendo Wii
     regex: ['Nintendo Wii; U; ; 2047-7']
-  windows:
-    name: Microsoft Windows
-    regex: ['Windows NT ([\d\.]+)?']
   windows_phone: 
     name: Microsoft Windows Phone
     regex: ['Windows Phone(?: OS)? ([\d\.]+)?']
+  windows:
+    name: Microsoft Windows
+    regex: ['Windows NT ([\d\.]+)?', 'Windows']
+  other_linux: 
+    name: Linux
+    regex: ['X11(?:.+?(i686|x86_64))?', 'Linux']
 
 browsers:
-  blackberry_browser:
-    name: BlackBerry Browser
-    regex: ['MIDP-([0-9\.]+)?', 'AppleWebKit\/([0-9\.]+)?']
   chrome:
     name: Chrome
     regex: ['Chrome(?:frame)?\/([\d\.]+)?', 'CriOS\/([0-9\.]+)?', 'Android.+?Apple ?WebKit.+?Version\/([\d\.]+)']
+  dreamweaver:
+    name: Adobe Dreamweaver
+    regex: ['Dreamweaver\/([\d\.]+)?']
+  dolfin:
+    name: Dolfin
+    regex: ['Dolfin\/([\d\.]+)?']
   firefox:
     name: Firefox
     regex: ['Firefox\/([\d\.]+)?']
   flock:
     name: Flock
     regex: ['Flock\/([\w\.]+)?']
+  konqueror:
+    name: Konqueror
+    regex: ['konqueror\/([\d\.]+)']
   mercury:
     name: Mercury
     regex: ['Mercury\/([\d\.]+)?']
@@ -48,32 +85,65 @@ browsers:
     regex: ['MSIE ([\d\.]+)?', 'Trident.+?rv:([\d\.]+)?']
   nokia_browser:
     name: Nokia Browser
-    regex: ['Nokia.*?\/([0-9\.]+)?', 'AppleWebKit\/([0-9\.]+)?']
+    regex: ['NokiaBrowser\/([0-9\.]+)?']
+  opera_mini:
+    name: Opera Mini
+    regex: ['Opera\/9\.80.+?Opera Mini\/([0-9\.]+)?', 'Opera Mini\/att\/([0-9\.]+).+?Opera 9\.50']
   opera:
     name: Opera
     regex: ['Opera\/9\.80.+?Version\/([0-9\.]+)?', 'Opera[\/ ]([0-9\.]+)?']
-  opera_mini:
-    name: Opera Mini
-    regex: ['Opera\/9\.80.+?Opera Mini\/([0-9\.]+)?']
+  playstation_3_browser:
+    name: Playstation 3 Browser
+    regex: ['PLAYSTATION 3 (?:[\d\.]+)'] # Only browser available for PS 3?
+  smart_tv:
+    name: 'Samsung Smart TV'
+    regex: ['SMART-TV.+?Version\/([\d\.]+)']
   safari:
     name: Safari
     regex: ['Version\/([\d\.]+)?.+?Safari', 'Safari\/([\d\.]+)?']
+  silk:
+    name: Silk
+    regex: ['Silk\/([0-9\.]+)']
+  uc_browser:
+    name: UC Browser
+    regex: ['UC Browser([\d\.]+)', 'UCBrowser\/([\d\.]+)']
+  web_os_browser:
+    name: WebOS Browser
+    regex: ['wOSBrowser/([\d\.]+)', 'webOS|hpwOS']
   mobile_safari:
     name: Safari
     regex: ['AppleWebKit(?:\/([\d\.]+))?']
+  blackberry_browser:
+    name: BlackBerry Browser
+    regex: ['AppleWebKit\/([0-9\.]+)?']
+  fallback:
+    name: Unknown Browser
+    regex: ['']
 
 # Opera first as it can spoof
 # Flock before firefox and chrome otherwise it can be reckognised as them
 # Chrome before safari as chrome user agent includes Safari keyword
 # Mercury before safari as mercury user agent includes Safari keyword
+# Dreamweaver before safari as mercury user agent includes Safari keyword
 os_browsers:
   android: [opera, chrome, firefox]
+  bada: [opera_mini, dolfin]
   blackberry: [opera, blackberry_browser]
+  blackberry_playbook: [opera, blackberry_browser]
+  chrome_os: [chrome]
+  fire_os: [silk]
   ios: [opera, chrome, firefox, mercury, safari, mobile_safari]
-  linux: [opera, flock, chrome, firefox]
-  mac: [opera, flock, chrome, firefox, safari]
-  symbian: [opera, nokia_browser]
-  windows: [opera, flock, chrome, firefox, msie, safari]
+  java_me: [opera_mini]
+  mac: [opera, flock, chrome, firefox, dreamweaver, safari, mobile_safari]
+  meego: [nokia_browser]
+  symbian: [opera_mini, uc_browser, nokia_browser]
+  red_hat_linux: [opera, flock, konqueror, chrome, firefox]
+  ubuntu_linux: [opera, flock, konqueror, chrome, firefox]
+  other_linux: [opera, flock, konqueror, chrome, firefox, smart_tv]
+  playstation_3: [playstation_3_browser]
+  web_os: [web_os_browser]
+  wii: []
+  windows: [opera, flock, chrome, firefox, msie, dreamweaver, safari]
   windows_phone: [msie]
 
 os_version_names:

@@ -95,5 +95,21 @@ class UserAgentDecoder
 
 	def load_rules
 		@rules = YAML.load_file "lib/user_agent_rules.yml"
+
+    # Add fallbacks
+    # OS fallback
+    @rules['os']['fallback'] = { 'name' => 'Unknown OS', 'regex' => [''] }
+
+    # Fallback broswser to every os_browser combinations
+    @rules['os_browsers'].each do | os, browsers |
+       @rules['os_browsers'][os] << 'fallback'
+    end
+
+    # Add all browsers to the fallback os
+    @rules['os_browsers']['fallback'] = []
+
+    @rules['browsers'].each do | browser, info |
+      @rules['os_browsers']['fallback'] << browser
+    end
 	end
 end
