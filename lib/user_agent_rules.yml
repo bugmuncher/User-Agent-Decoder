@@ -116,9 +116,6 @@ browsers:
   blackberry_browser:
     name: BlackBerry Browser
     regex: ['AppleWebKit\/([0-9\.]+)?']
-  fallback:
-    name: Unknown Browser
-    regex: ['']
 
 # Opera first as it can spoof
 # Flock before firefox and chrome otherwise it can be reckognised as them

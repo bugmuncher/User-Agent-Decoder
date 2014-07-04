@@ -99,6 +99,9 @@ class UserAgentDecoder
     # Add fallbacks
     # OS fallback
     @rules['os']['fallback'] = { 'name' => 'Unknown OS', 'regex' => [''] }
+    
+    # Browser fallback
+    @rules['browsers']['fallback'] = { 'name' => 'Unknown Browser', 'regex' => [''] }
 
     # Fallback broswser to every os_browser combinations
     @rules['os_browsers'].each do | os, browsers |
