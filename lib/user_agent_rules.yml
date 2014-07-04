@@ -25,7 +25,7 @@ os:
     name: Java ME
     regex: ['J2ME\/MIDP']
   mac: 
-    name: Apple OS X
+    name: Mac OS X
     regex: ['Macintosh.+?OS X ?([\w\.]+)?']
   meego:
     name: MeeGo
@@ -49,10 +49,10 @@ os:
     name: Nintendo Wii
     regex: ['Nintendo Wii; U; ; 2047-7']
   windows_phone: 
-    name: Microsoft Windows Phone
+    name: Windows Phone
     regex: ['Windows Phone(?: OS)? ([\d\.]+)?']
   windows:
-    name: Microsoft Windows
+    name: Windows
     regex: ['Windows NT ([\d\.]+)?', 'Windows']
   other_linux: 
     name: Linux
@@ -147,37 +147,37 @@ os_version_names:
   windows: 
     -
       version: '3\.'
-      name: 'Windows NT'
+      name: 'NT'
     -
       version: '4\.0'
-      name: 'Windows 95'
+      name: '95'
     -
       version: '4\.1'
-      name: 'Windows 98'
+      name: '98'
     -
       version: '4\.9'
-      name: 'Windows Millenium'
+      name: 'Millenium'
     -
       version: '5\.0'
-      name: 'Windows 2000'
+      name: '2000'
     -
       version: '5\.1'
-      name: 'Windows XP'
+      name: 'XP'
     -
       version: '5\.2'
-      name: 'Windows Server 2003'
+      name: 'Server 2003'
     -
       version: '6\.0'
-      name: 'Windows Vista'
+      name: 'Vista'
     -
       version: '6\.1'
-      name: 'Windows 7'
+      name: '7'
     -
       version: '6\.2'
-      name: 'Windows 8'
+      name: '8'
     -
       version: '6\.3'
-      name: 'Windows 8.1'
+      name: '8.1'
   mac:
     -
       version: '10\.0'
