@@ -94,7 +94,7 @@ class UserAgentDecoder
 	end
 
 	def load_rules
-		@rules = YAML.load_file "lib/user_agent_rules.yml"
+    @rules = YAML.load_file(File.join(File.dirname(File.expand_path(__FILE__)), 'user_agent_rules.yml'))
 
     # Add fallbacks
     # OS fallback
