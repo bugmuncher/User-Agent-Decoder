@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Accurately parse User Agent strings using simple, cascading rules - devloped for and by BugMuncher"
   s.authors     = ["Matt Bearman"]
   s.email       = 'info@bugmuncher.com'
-  s.files       = ["lib/user_agent_decoder.rb"]
+  s.files       = ["lib/user_agent_decoder.rb", "lib/user_agent_rules.yml"]
   s.homepage    = 'http://rubygems.org/gems/user_agent_decoder'
   s.license     = 'MIT'
 end
