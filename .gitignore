@@ -35,3 +35,7 @@ build/
 
 # Mac index files
 .DS_Store
+
+# Sublime Text Files
+*.sublime-workspace
+*.sublime-project
