@@ -10,7 +10,7 @@ With this in mind User Agent Decoder was build from the ground up to be easy to 
 **Note:** The rules file is still a bit of a mess, and definitely be changed (and probably separated into multiple files) before being locked for version 1.0.
 
 ## Tested to destruction
-User Agent Decoder has been tested against over 4,500 unique user agent strings, taken from BugMuncher's constantly growing database. Whenever an unrecognised user agent is found, this gem will be updated to understand it.
+User Agent Decoder has been tested against over 4,600 unique user agent strings, taken from BugMuncher's constantly growing database. Whenever an unrecognised user agent is found, this gem will be updated to understand it.
 
 User Agent Decoder can currently parse user agent strings from the following Operating Systems:
 
@@ -80,3 +80,9 @@ First build, tested on small sample of user agents
 
 ### v 0.0.2
 Alpha release, tested and working on over 4,500 user agents
+
+### v 0.0.3
+Improve browser and OS names
+
+### v 0.0.4
+Add support for OS X Yosemite

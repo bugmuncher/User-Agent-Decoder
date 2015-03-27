@@ -183,6 +183,9 @@ os_version_names:
       version: '10\.0'
       name: 'Cheeta'
     -
+      version: '10\.10'
+      name: 'Yosemite' # needs to go before puma to stop 10.10 matching 10.1
+    -
       version: '10\.1'
       name: 'Puma'
     -
