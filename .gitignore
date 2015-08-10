@@ -39,3 +39,6 @@ build/
 # Sublime Text Files
 *.sublime-workspace
 *.sublime-project
+
+# My local ruby version doesn't need enforcing :)
+.ruby-version
