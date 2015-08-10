@@ -44,6 +44,7 @@ And the following browsers:
  - Konqueror
  - Google Chrome
  - Internet Explorer
+ - Microsoft Edge
  - Mercury
  - Nokia Browser
  - Opera
@@ -86,3 +87,6 @@ Improve browser and OS names
 
 ### v 0.0.4
 Add support for OS X Yosemite
+
+### v 0.0.5
+Add suport for Windows 10 and Microsoft Edge browser

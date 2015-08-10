@@ -68,6 +68,9 @@ browsers:
   dolfin:
     name: Dolfin
     regex: ['Dolfin\/([\d\.]+)?']
+  edge:
+    name: Edge
+    regex: ['Edge\/([\d\.]+)']
   firefox:
     name: Firefox
     regex: ['Firefox\/([\d\.]+)?']
@@ -140,7 +143,7 @@ os_browsers:
   playstation_3: [playstation_3_browser]
   web_os: [web_os_browser]
   wii: []
-  windows: [opera, flock, chrome, firefox, msie, dreamweaver, safari]
+  windows: [opera, flock, edge, chrome, firefox, msie, dreamweaver, safari]
   windows_phone: [msie]
 
 os_version_names:
@@ -178,6 +181,9 @@ os_version_names:
     -
       version: '6\.3'
       name: '8.1'
+    -
+      version: '10\.0'
+      name: '10'
   mac:
     -
       version: '10\.0'
