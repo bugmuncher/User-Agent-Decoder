@@ -90,3 +90,6 @@ Add support for OS X Yosemite
 
 ### v 0.0.5
 Add suport for Windows 10 and Microsoft Edge browser
+
+### v 0.0.6
+Add suport for Yandex browser
