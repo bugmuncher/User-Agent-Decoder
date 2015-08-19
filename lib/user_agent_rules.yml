@@ -113,6 +113,9 @@ browsers:
   web_os_browser:
     name: WebOS Browser
     regex: ['wOSBrowser/([\d\.]+)', 'webOS|hpwOS']
+  yandex:
+    name: Yandex
+    regex: ['YaBrowser/([\d\.]+)']
   mobile_safari:
     name: Safari
     regex: ['AppleWebKit(?:\/([\d\.]+))?']
@@ -122,6 +125,7 @@ browsers:
 
 # Opera first as it can spoof
 # Flock before firefox and chrome otherwise it can be reckognised as them
+# Yandex before chrome as it can be seen as them
 # Chrome before safari as chrome user agent includes Safari keyword
 # Mercury before safari as mercury user agent includes Safari keyword
 # Dreamweaver before safari as mercury user agent includes Safari keyword
@@ -134,7 +138,7 @@ os_browsers:
   fire_os: [silk]
   ios: [opera, chrome, firefox, mercury, safari, mobile_safari]
   java_me: [opera_mini]
-  mac: [opera, flock, chrome, firefox, dreamweaver, safari, mobile_safari]
+  mac: [opera, flock, yandex, chrome, firefox, dreamweaver, safari, mobile_safari]
   meego: [nokia_browser]
   symbian: [opera_mini, uc_browser, nokia_browser]
   red_hat_linux: [opera, flock, konqueror, chrome, firefox]
@@ -143,7 +147,7 @@ os_browsers:
   playstation_3: [playstation_3_browser]
   web_os: [web_os_browser]
   wii: []
-  windows: [opera, flock, edge, chrome, firefox, msie, dreamweaver, safari]
+  windows: [opera, flock, edge, yandex, chrome, firefox, msie, dreamweaver, safari]
   windows_phone: [msie]
 
 os_version_names:

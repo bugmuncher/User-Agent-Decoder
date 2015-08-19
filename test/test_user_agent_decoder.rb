@@ -81,10 +81,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","19.0.1084.46","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/536.5"],
         ["Chrome","19.0.1084.46","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/536.5 Nichrome/self/19"],
         ["Chrome","19.0.1084.52","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5"],
-        ["Chrome","19.0.1084.5402","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.0.1084.5402 Chrome/19.0.1084.5402 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
-        ["Chrome","19.1.1084.5409","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
         ["Chrome","20.0.1115.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9"],
         ["Chrome","20.0.1123.4","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.10 (KHTML, like Gecko) Chrome/20.0.1123.4 Safari/536.10"],
         ["Chrome","20.0.1132.43","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.43 Safari/536.11"],
@@ -108,9 +105,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","21.0.1180.89","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
         ["Chrome","21.0.1184.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1184.0 Safari/537.1"],
         ["Chrome","21.0.1200.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1200.0 Iron/21.0.1200.0  Safari/537.1"],
-        ["Chrome","22.0.1104.222","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
-        ["Chrome","22.0.1105.412","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
-        ["Chrome","22.0.1105.511","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
         ["Chrome","22.0.1207.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"],
         ["Chrome","22.0.1229.14","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.14 Safari/537.4"],
         ["Chrome","22.0.1229.79","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/4.0.0.2000 Chrome/22.0.1229.79 Safari/537.1"],
@@ -1015,6 +1009,15 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari","5.1.2","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.52.7 (KHTML, like Gecko) Version/5.1.2 Safari/534.52.7"],
         ["Safari","5.1.7","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"],
 
+        # Yandex
+        ["Yandex","1.0.1084.5402","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.0.1084.5402 Chrome/19.0.1084.5402 Safari/536.5"],
+        ["Yandex","1.1.1084.5409","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
+        ["Yandex","1.1.1084.5410","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.5.1104.222","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
+        ["Yandex","1.5.1105.412","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
+        ["Yandex","1.5.1105.511","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
+
+
         # Server 2003
         ["Chrome","14.0.835.163","Windows","5.2","Server 2003","Mozilla/5.0 (Windows NT 5.2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1"],
         ["Chrome","14.0.835.186","Windows","5.2","Server 2003","Mozilla/5.0 (Windows NT 5.2; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1"],
@@ -1101,7 +1104,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","19.0.1084.52","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
         ["Chrome","20.0.1132.47","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11"],
         ["Chrome","20.0.1132.57","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"],
         ["Chrome","20.0.1132.57","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"],
@@ -1114,7 +1116,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","21.0.1180.83","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1"],
         ["Chrome","21.0.1180.89","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
         ["Chrome","21.0.1180.89","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
-        ["Chrome","22.0.1105.511","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
         ["Chrome","22.0.1182.0","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1182.0 Safari/537.1"],
         ["Chrome","22.0.1229.14","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.14 Safari/537.4"],
         ["Chrome","22.0.1229.39","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.39 Safari/537.4"],
@@ -1420,6 +1421,9 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari","5.1.5","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3"],
         ["Safari","5.1.7","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"],
 
+        ["Yandex","1.1.1084.5410","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.5.1105.511","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
+
 
         # 7
         # Chrome
@@ -1559,14 +1563,9 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","19.0.1084.46","Windows","6.1","7","Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/19.0.1084.46 Safari/534.7 ZemanaAID/FFFF0059"],
         ["Chrome","19.0.1084.52","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5"],
         ["Chrome","19.0.1084.52","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5"],
-        ["Chrome","19.0.1084.5405","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.0.1084.5405 Chrome/19.0.1084.5405 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
         ["Chrome","19.0.1100.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Iron/19.0.1100.0 Chrome/19.0.1100.0 Safari/536.5"],
-        ["Chrome","19.1.1084.5409","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
-        ["Chrome","19.1.1084.5409","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
         ["Chrome","20.0.1115.1","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9"],
         ["Chrome","20.0.1115.1","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9 AppEngine-Google; (+http://code.google.com/appengine; appid: s~apploca520)"],
         ["Chrome","20.0.1115.1","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9"],
@@ -1623,12 +1622,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","21.0.1192","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1192 .0 Safari/537.1"],
         ["Chrome","21.0.1193","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1193 .0 Safari/537.1"],
         ["Chrome","21.0.1200.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1200.0 Iron/21.0.1200.0  Safari/537.1"],
-        ["Chrome","22.0.1104.222","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
-        ["Chrome","22.0.1104.222","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
-        ["Chrome","22.0.1105.412","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
-        ["Chrome","22.0.1105.412","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
-        ["Chrome","22.0.1105.511","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (fnrb) Safari/537.4"],
-        ["Chrome","22.0.1105.511","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
         ["Chrome","22.0.1185.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1185.0 Safari/537.1"],
         ["Chrome","22.0.1188.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1188.0 Safari/537.1"],
         ["Chrome","22.0.1201.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1201.0 Safari/537.1"],
@@ -1730,8 +1723,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","25.0.1364.160","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22"],
         ["Chrome","25.0.1364.160","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22"],
         ["Chrome","25.0.1364.172","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22"],
-        ["Chrome","25.0.1364.172","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.7.1364.17262 Safari/537.22"],
-        ["Chrome","25.0.1364.172","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.7.1364.22076 Safari/537.22"],
         ["Chrome","25.0.1364.172","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22"],
         ["Chrome","25.0.1364.172","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22 AlexaToolbar/alxg-3.1"],
         ["Chrome","25.0.1364.26","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.26 Safari/537.22"],
@@ -2548,6 +2539,22 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari","5.1.5","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.5 Safari/534.55.3"],
         ["Safari","5.1.7","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"],
         ["Safari","5.1.7","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"],
+        
+        # Yandex
+        ["Yandex","14.12.2125.9579","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 YaBrowser/14.12.2125.9579 Safari/537.36"],
+        ["Yandex","1.0.1084.5405","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.0.1084.5405 Chrome/19.0.1084.5405 Safari/536.5"],
+        ["Yandex","1.1.1084.5409","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
+        ["Yandex","1.1.1084.5409","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5409 Chrome/19.1.1084.5409 Safari/536.5"],
+        ["Yandex","1.1.1084.5410","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.1.1084.5410","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.5.1104.222","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
+        ["Yandex","1.5.1104.222","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
+        ["Yandex","1.5.1105.412","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
+        ["Yandex","1.5.1105.412","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
+        ["Yandex","1.5.1105.511","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (fnrb) Safari/537.4"],
+        ["Yandex","1.5.1105.511","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
+        ["Yandex","1.7.1364.17262","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.7.1364.17262 Safari/537.22"],
+        ["Yandex","1.7.1364.22076","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 YaBrowser/1.7.1364.22076 Safari/537.22"],
 
         # 8
         ["Chrome","13.0.782.220","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.220 Safari/535.1"],
@@ -2568,8 +2575,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","19.0.1084.52","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
         ["Chrome","19.0.1084.56","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
-        ["Chrome","19.1.1084.5410","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
         ["Chrome","20.0.1132.57","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"],
         ["Chrome","20.0.1132.57","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11 AlexaToolbar/alxg-3.0"],
         ["Chrome","20.0.1132.57","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"],
@@ -2580,9 +2585,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","21.0.1180.83","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1"],
         ["Chrome","21.0.1180.89","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
         ["Chrome","21.0.1180.89","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
-        ["Chrome","22.0.1104.222","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
-        ["Chrome","22.0.1104.222","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
-        ["Chrome","22.0.1105.412","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
         ["Chrome","22.0.1216.0","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.2 (KHTML, like Gecko) Chrome/22.0.1216.0 Safari/537.2"],
         ["Chrome","22.0.1220.0","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.3 (KHTML, like Gecko) Chrome/22.0.1220.0 Safari/537.3"],
         ["Chrome","22.0.1229.26","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.26 Safari/537.4"],
@@ -2782,6 +2784,13 @@ class UserAgentDecoderTest < Test::Unit::TestCase
 
         ["Safari","5.1.7","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"],
 
+        ["Yandex","1.1.1084.5410","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.1.1084.5410","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
+        ["Yandex","1.5.1104.222","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
+        ["Yandex","1.5.1104.222","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.222 YaBrowser/1.5.1104.222 Safari/537.4"],
+        ["Yandex","1.5.1105.412","Windows","6.2","8","Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
+
+
         # 8.1
         ["Chrome","30.0.1599.101","Windows","6.3","8.1","Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36"],
         ["Chrome","30.0.1599.22","Windows","6.3","8.1","Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.22 Safari/537.36"],
@@ -2971,7 +2980,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","21.0.1180.89","Mac OS X","10.8.1","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
         ["Chrome","21.0.1180.89","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1"],
         ["Chrome","21.0.1180.90","Mac OS X","10.5.8","Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.90 Safari/537.1"],
-        ["Chrome","22.0.1104.221","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.221 YaBrowser/1.5.1104.221 Safari/537.4"],
         ["Chrome","22.0.1223.0","Mac OS X","10.6.8","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.3 (KHTML, like Gecko) Chrome/22.0.1223.0 Safari/537.3"],
         ["Chrome","22.0.1229.12","Mac OS X","10.7.4","Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.12 Safari/537.4"],
         ["Chrome","22.0.1229.14","Mac OS X","10.8.0","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.14 Safari/537.4"],
@@ -3456,6 +3464,8 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari", "8.0.3", "Mac OS X", "10.10.2", "Yosemite", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.14 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.14"],
         ["Safari", "8.0.3", "Mac OS X", "10.10.2", "Yosemite", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18"],
         ["Safari", "8.0.4", "Mac OS X", "10.10.2", "Yosemite", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.4.10 (KHTML, like Gecko) Version/8.0.4 Safari/600.4.10"],
+
+        ["Yandex","1.5.1104.221","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.221 YaBrowser/1.5.1104.221 Safari/537.4"],
 
         # OSX Unknown Version
         ['Adobe Dreamweaver', '12.0.0.5808', 'Mac OS X', '', '', 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/530.19.2 (KHTML, like Gecko) Dreamweaver/12.0.0.5808 Version/4.0.2 Safari/530.19.2'],
