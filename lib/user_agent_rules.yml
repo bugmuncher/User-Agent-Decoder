@@ -94,7 +94,7 @@ browsers:
     regex: ['Opera\/9\.80.+?Opera Mini\/([0-9\.]+)?', 'Opera Mini\/att\/([0-9\.]+).+?Opera 9\.50']
   opera:
     name: Opera
-    regex: ['Opera\/9\.80.+?Version\/([0-9\.]+)?', 'Opera[\/ ]([0-9\.]+)?']
+    regex: ['Opera\/9\.80.+?Version\/([0-9\.]+)?', 'Opera[\/ ]([0-9\.]+)?', 'OPR/([0-9\.]+)']
   playstation_3_browser:
     name: Playstation 3 Browser
     regex: ['PLAYSTATION 3 (?:[\d\.]+)'] # Only browser available for PS 3?

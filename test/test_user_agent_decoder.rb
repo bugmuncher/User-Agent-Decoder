@@ -174,7 +174,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","30.0.1599.101","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36"],
         ["Chrome","30.0.1599.69","Windows","5.1","XP","Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; chromeframe/30.0.1599.69; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.3; MS-RTC LM 8)"],
         ["Chrome","30.0.1599.69","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.69 Safari/537.36"],
-        ["Chrome","30.0.1599.69","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.69 Safari/537.36 OPR/17.0.1241.45"],
         ["Chrome","30.0.1650.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Iron/30.0.1650.0  Chrome/30.0.1650.0 Safari/537.36"],
         ["Chrome","31.0.1632.7","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1632.7 Safari/537.36"],
         ["Chrome","4.0.221.6","Windows","5.1","XP","Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/4.0.221.6 Safari/532.2"],
@@ -1002,6 +1001,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Opera","11.60","Windows","5.1","XP","Opera/9.80 (Windows NT 5.1; U; es-ES) Presto/2.10.229 Version/11.60"],
         ["Opera","11.62","Windows","5.1","XP","Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.10.229 Version/11.62"],
         ["Opera","12.02","Windows","5.1","XP","Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.10.289 Version/12.02"],
+        ["Opera","17.0.1241.45","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.69 Safari/537.36 OPR/17.0.1241.45"],
 
         # Safari
         ["Safari","4.0.5","Windows","5.1","XP","Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7"],
@@ -1413,6 +1413,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Opera","9.20","Windows","6.0","Vista","Opera/9.20 (Windows NT 6.0; U; de)"],
         ["Opera","9.10","Windows","6.0","Vista","Opera/9.10 (Windows NT 6.0; U; en)"],
         ["Opera","7.23","Windows","6.0","Vista","Opera/7.23 (Windows NT 6.0; U) [zh-cn]"],
+        ["Opera","31.0.1889.99","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.107 Safari/537.36 OPR/31.0.1889.99"],
 
         # Safari
         ["Safari","5.0.5","Windows","6.0","Vista","Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1"],
@@ -1797,7 +1798,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","28.0.1500.37","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.37 Safari/537.36"],
         ["Chrome","28.0.1500.44","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.44 Safari/537.36"],
         ["Chrome","28.0.1500.52","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36"],
-        ["Chrome","28.0.1500.52","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36 OPR/15.0.1147.130"],
         ["Chrome","28.0.1500.63","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Safari/537.36"],
         ["Chrome","28.0.1500.71","Windows","6.1","7","Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; chromeframe/28.0.1500.71; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MS-RTC LM 8; .NET4.0C; .NET4.0E)"],
         ["Chrome","28.0.1500.71","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.71 Safari/537.36"],
@@ -1807,7 +1807,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","28.0.1500.72","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.72 Safari/537.36 AlexaToolbar/alxg-3.1"],
         ["Chrome","28.0.1500.95","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"],
         ["Chrome","28.0.1500.95","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36 AlexaToolbar/alxg-3.1"],
-        ["Chrome","28.0.1500.95","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36 OPR/15.0.1147.153"],
         ["Chrome","28.0.1500.95","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"],
         ["Chrome","28.0.1500.95","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36 AlexaToolbar/alxg-3.1"],
         ["Chrome","29.0.1510.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1510.0 Safari/537.36"],
@@ -2528,6 +2527,8 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Opera","12.02","Windows","6.1","7","Opera/9.80 (Windows NT 6.1; WOW64; U; en) Presto/2.10.289 Version/12.02"],
         ["Opera","11.62","Windows","6.1","7","Opera/9.80 (Windows NT 6.1; WOW64; U; fr) Presto/2.10.229 Version/11.62"],
         ["Opera","12.02","Windows","6.1","7","Opera/9.80 (Windows NT 6.1; WOW64; U; pl) Presto/2.10.289 Version/12.02"],
+        ["Opera","15.0.1147.130","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.52 Safari/537.36 OPR/15.0.1147.130"],
+        ["Opera","15.0.1147.153","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36 OPR/15.0.1147.153"],
 
         # Safari
         ["Safari","4.0.5","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.50 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7"],
@@ -3862,7 +3863,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome","29.0.1547.72","Android","4.0.4","","Mozilla/5.0 (Linux; Android 4.0.4; GT-P7510 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36"],
         ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; DROID RAZR HD Build/9.8.1Q-79) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"],
         ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; GT-I9100 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"],
-        ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; SPH-L710 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64462"],
         ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; Xoom Build/JZO54M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36"],
         ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; XT907 Build/9.8.1Q-78) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"],
         ["Chrome","29.0.1547.72","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; XT907 Build/9.8.1Q-78-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"],
@@ -4426,6 +4426,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox","10.0.2","Android","","","Mozilla/5.0 (Android; Linux armv7l; rv:10.0.2) Gecko/20120215 Firefox/10.0.2 Fennec/10.0.2"],
 
         ["Opera","12.00","Android","4.0.3","","Opera/9.80 (Android 4.0.3; Linux; Opera Mobi/ADR-1207201819; U; en) Presto/2.10.254 Version/12.00"],
+        ["Opera","16.0.1212.64462","Android","4.1.2","","Mozilla/5.0 (Linux; Android 4.1.2; SPH-L710 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64462"],
 
         # Chrome OS
         ["Chrome","14.0.825.0","Chrome OS","14.0.825.0","","Mozilla/5.0 (X11; CrOS i686 14.774.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.825.0 Safari/535.1"],

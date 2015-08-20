@@ -55,6 +55,7 @@ And the following browsers:
  - Samsung Smart TV
  - Silk
  - UC Browser
+ - Yandex Browser
  - WebOS Browser
 
 ## Usage
@@ -93,3 +94,6 @@ Add suport for Windows 10 and Microsoft Edge browser
 
 ### v 0.0.6
 Add suport for Yandex browser
+
+### v 0.0.7
+Add suport for new Opera 'OPR/' User Agent string
