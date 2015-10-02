@@ -97,3 +97,6 @@ Add suport for Yandex browser
 
 ### v 0.0.7
 Add suport for new Opera 'OPR/' User Agent string
+
+### v 0.0.8
+Add suport for OS X El Capitan
