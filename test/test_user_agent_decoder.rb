@@ -3269,6 +3269,12 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome", "45.0.2454.85", "Mac OS X", "10.11.0", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"],
         ["Chrome", "45.0.2454.85", "Mac OS X", "10.11.0", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"],
         ["Chrome", "45.0.2454.85", "Mac OS X", "10.11.0", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36"],
+        # Sierra
+        ["Chrome", "49.0.2623.87", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"],
+        ["Chrome", "52.0.2743.116", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"],
+        ["Chrome", "53.0.2785.116", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"],
+        ["Chrome", "53.0.2785.116", "Mac OS X", "10.12.1", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"],
+        ["Chrome", "53.0.2785.143", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"],
 
         ["Firefox","10.0","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.5; rv:10.0) Gecko/20100101 Firefox/10.0"],
         ["Firefox","10.0","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:10.0) Gecko/20100101 Firefox/10.0"],
@@ -3380,11 +3386,14 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox", "38.0", "Mac OS X", "10.10", "Yosemite", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:38.0) Gecko/20100101 Firefox/38.0"],
         # El Capitan
         ["Firefox", "40.0", "Mac OS X", "10.11", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:40.0) Gecko/20100101 Firefox/40.0"],
+        # Sierra
+        ["Firefox", "49.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:49.0) Gecko/20100101 Firefox/49.0"],
 
         ["Flock","2.6.2","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.19) Gecko/2011012618 Firefox/3.0.19 Flock/2.6.2"],
 
-        ["Opera","12.00","Mac OS X","10.7.2","Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.7.2; U; Edition Next; en) Presto/2.10.269 Version/12.00"],
-        ["Opera","12.15","Mac OS X","10.8.3","Mountain Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.8.3) Presto/2.12.388 Version/12.15"],
+        ["Opera", "12.00","Mac OS X","10.7.2","Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.7.2; U; Edition Next; en) Presto/2.10.269 Version/12.00"],
+        ["Opera", "12.15","Mac OS X","10.8.3","Mountain Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.8.3) Presto/2.12.388 Version/12.15"],
+        ["Opera", "39.0.2256.48", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48"],
 
         ["Safari","534.57.7","Mac OS X","10.7.5","Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko)"],
         ["Safari","3.0.4","Mac OS X","","","Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/523.12 (KHTML, like Gecko) Version/3.0.4 Safari/523.12"],
@@ -3480,6 +3489,9 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari", "9.0", "Mac OS X", "10.11", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11) AppleWebKit/601.1.50 (KHTML, like Gecko) Version/9.0 Safari/601.1.50"],
         ["Safari", "9.0", "Mac OS X", "10.11", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11) AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37"],
         ["Safari", "9.0", "Mac OS X", "10.11", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11) AppleWebKit/601.1.56 (KHTML, like Gecko) Version/9.0 Safari/601.1.56"],
+        # Sierra
+        ["Safari", "10.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Safari/602.1.38"],
+        ["Safari", "10.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Safari/602.1.50"],
 
         ["Yandex","1.5.1104.221","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.221 YaBrowser/1.5.1104.221 Safari/537.4"],
 
