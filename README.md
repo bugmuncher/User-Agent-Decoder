@@ -27,6 +27,7 @@ User Agent Decoder can currently parse user agent strings from the following Ope
  - Microsoft Windows Phone
  - Nintendo Wii
  - Nokia Symbian
+ - OS/2
  - Red Hat Linux
  - Ubuntu Linux
  - Other Linux
@@ -37,6 +38,7 @@ User Agent Decoder can currently parse user agent strings from the following Ope
 And the following browsers:
 
  - Adobe Dreamweaver
+ - AOL Shield Pro
  - BlackBerry Browser
  - Dolfin
  - Firefox
@@ -50,6 +52,7 @@ And the following browsers:
  - Opera
  - Opera Mini
  - Playstation 3 Browser
+ - SeaMonkey
  - Safari
  - Safari Mobile
  - Samsung Smart TV
@@ -100,3 +103,12 @@ Add suport for new Opera 'OPR/' User Agent string
 
 ### v 0.0.8
 Add suport for OS X El Capitan
+
+### v 0.0.9
+Add suport for OS X Sierra
+
+### v 0.0.10
+Add suport for OS X High Sierra
+
+### v 0.0.11
+Add suport for Mac OS Mojave and Catalina. Add OS/2, SeaMonkey and AOL Shield Pro. BugMuncher is now Saber

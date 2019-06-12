@@ -1,6 +1,6 @@
 require 'test/unit'
 require 'user_agent_decoder'
-require 'debugger'
+#require 'debugger'
 
 class UserAgentDecoderTest < Test::Unit::TestCase
   def test_user_agents
@@ -194,7 +194,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox","11.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0 CometBird/11.0"],
         ["Firefox","11.0.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20120325 Firefox/11.0.1 PaleMoon/11.0.1"],
         ["Firefox","12.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20100101 Firefox/12.0"],
-        ["Firefox","12.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20120429 Firefox/12.0 SeaMonkey/2.9.1"],
         ["Firefox","13.0","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/20100101 Firefox/13.0"],
         ["Firefox","13.0.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/20100101 Firefox/13.0.1"],
         ["Firefox","13.0.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; WOW64; rv:13.0) Gecko/20100101 Firefox/13.0.1"],
@@ -1017,6 +1016,9 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Yandex","1.5.1105.412","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.412 YaBrowser/1.5.1105.412 Safari/537.4"],
         ["Yandex","1.5.1105.511","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
 
+        ["AOL Shield Pro","52.4.2","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 AOLShield/52.4.2"],
+
+        ["SeaMonkey","2.9.1","Windows","5.1","XP","Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20120429 Firefox/12.0 SeaMonkey/2.9.1"],
 
         # Server 2003
         ["Chrome","14.0.835.163","Windows","5.2","Server 2003","Mozilla/5.0 (Windows NT 5.2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.163 Safari/535.1"],
@@ -1425,6 +1427,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Yandex","1.1.1084.5410","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) YaBrowser/1.1.1084.5410 Chrome/19.1.1084.5410 Safari/536.5"],
         ["Yandex","1.5.1105.511","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1105.511 YaBrowser/1.5.1105.511 (gtsr) Safari/537.4"],
 
+        ["AOL Shield Pro","52.4.2","Windows","6.0","Vista","Mozilla/5.0 (Windows NT 6.0; rv:52.0) Gecko/20100101 AOLShield/52.4.2"],
 
         # 7
         # Chrome
@@ -1925,8 +1928,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 AlexaToolbar/amznf-3.0.20121130"],
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 FirePHP/0.7.1"],
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 IceDragon/18.0.3.1"],
-        ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 SeaMonkey/2.15"],
-        ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 SeaMonkey/2.15.1"],
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0; WUID=5ffdce6b2d53d02b5f65cef09943d450; WTB=114) Gecko/20100101 Firefox/18.0"],
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0; WUID=7e90d6fc12f9da2a59fbb1c624624a94; WTB=2996) Gecko/20100101 Firefox/18.0"],
         ["Firefox","18.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0; WUID=90fc03007bf53f374a4816a317a5fde3; WTB=77) Gecko/20100101 Firefox/18.0"],
@@ -1973,7 +1974,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox","23.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0 AlexaToolbar/alxf-2.18"],
         ["Firefox","23.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0; WUID=2d527afc57f8d4fa89ffd047be0cf6ac; WTB=2937) Gecko/20100101 Firefox/23.0"],
         ["Firefox","24.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0"],
-        ["Firefox","24.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0 SeaMonkey/2.21"],
         ["Firefox","24.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0"],
         ["Firefox","25.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; rv:25.0) Gecko/20100101 Firefox/25.0"],
         ["Firefox","25.0","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0"],
@@ -2017,6 +2017,10 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Flock","2.5.6","Windows","6.1","7","Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.0.16) Gecko/2010021003 Firefox/3.0.16 Flock/2.5.6"],
         ["Flock","2.0.3","Windows","6.1","7","Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.0.5) Gecko/2009012105 Firefox/3.0.5 Flock/2.0.3"],
         ["Flock","2.0.3","Windows","6.1","7","Mozilla/5.0 (Windows; U; Windows NT 6.1; en-CA; rv:1.9.0.5) Gecko/2009012102 Firefox/3.0.5 Flock/2.0.3"],
+
+        ["SeaMonkey","2.15","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 SeaMonkey/2.15"],
+        ["SeaMonkey","2.15.1","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0 SeaMonkey/2.15.1"],
+        ["SeaMonkey","2.21","Windows","6.1","7","Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0 SeaMonkey/2.21"],
 
         # Internet Explorer
         ["Internet Explorer","10.0","Windows","6.1","7","Mozilla/5.0 (compatible; MSIE 10.0; AOL 9.6; AOLBuild 4340.101; Windows NT 6.1; WOW64; Trident/6.0)"],
@@ -3275,6 +3279,19 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Chrome", "53.0.2785.116", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"],
         ["Chrome", "53.0.2785.116", "Mac OS X", "10.12.1", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"],
         ["Chrome", "53.0.2785.143", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"],
+        # High Sierra
+        ["Chrome", "75.0.3770.80", "Mac OS X", "10.13.6", "High Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"],
+        ["Chrome", "74.0.3729.157", "Mac OS X", "10.13.4", "High Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36"],
+
+        # Mojave
+        ["Chrome", "75.0.3770.80", "Mac OS X", "10.14.1", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"],
+        ["Chrome", "76.0.3805.0", "Mac OS X", "10.14.4", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3805.0 Safari/537.36"],
+        ["Chrome", "75.0.3770.80", "Mac OS X", "10.14.5", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"],
+
+        # Catalina
+        # Not a real UA, as Catalina isn't out yet
+        ["Chrome", "75.0.3770.80", "Mac OS X", "10.15.0", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"],
+
 
         ["Firefox","10.0","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.5; rv:10.0) Gecko/20100101 Firefox/10.0"],
         ["Firefox","10.0","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:10.0) Gecko/20100101 Firefox/10.0"],
@@ -3298,7 +3315,6 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox","14.0","Mac OS X","10.7","Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0"],
         ["Firefox","14.0.1","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.5; rv:14.0) Gecko/20100101 Firefox/14.0.1"],
         ["Firefox","14.0.1","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:14.0) Gecko/20100101 Firefox/14.0.1"],
-        ["Firefox","14.0.1","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:14.0) Gecko/20120715 Firefox/14.0.1 SeaMonkey/2.11"],
         ["Firefox","14.0.1","Mac OS X","10.7","Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:14.0) Gecko/20100101 Firefox/14.0.1"],
         ["Firefox","14.0.1","Mac OS X","10.8","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:14.0) Gecko/20100101 Firefox/14.0.1"],
         ["Firefox","14.0.1","Mac OS X","10.8","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:14.0) Gecko/20100101 Firefox/14.0.1 AlexaToolbar/alxf-2.15"],
@@ -3388,12 +3404,23 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Firefox", "40.0", "Mac OS X", "10.11", "El Capitan", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:40.0) Gecko/20100101 Firefox/40.0"],
         # Sierra
         ["Firefox", "49.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:49.0) Gecko/20100101 Firefox/49.0"],
+        # High Sierra
+        ["Firefox", "67.0", "Mac OS X", "10.13", "High Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:67.0) Gecko/20100101 Firefox/67.0"],
+        # Mojave
+        ["Firefox", "67.0", "Mac OS X", "10.14", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0"],
+        # Catalina
+        ["Firefox", "67.0", "Mac OS X", "10.15", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:67.0) Gecko/20100101 Firefox/67.0"],
 
         ["Flock","2.6.2","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.19) Gecko/2011012618 Firefox/3.0.19 Flock/2.6.2"],
+
+        ["SeaMonkey","2.11","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:14.0) Gecko/20120715 Firefox/14.0.1 SeaMonkey/2.11"],
 
         ["Opera", "12.00","Mac OS X","10.7.2","Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.7.2; U; Edition Next; en) Presto/2.10.269 Version/12.00"],
         ["Opera", "12.15","Mac OS X","10.8.3","Mountain Lion","Opera/9.80 (Macintosh; Intel Mac OS X 10.8.3) Presto/2.12.388 Version/12.15"],
         ["Opera", "39.0.2256.48", "Mac OS X", "10.12.0", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36 OPR/39.0.2256.48"],
+        ["Opera", "60.0.3255.109", "Mac OS X", "10.13.6", "High Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36 OPR/60.0.3255.109"],
+        ["Opera", "60.0.3255.70", "Mac OS X", "10.14.4", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36 OPR/60.0.3255.70"],
+        ["Opera", "60.0.3255.70", "Mac OS X", "10.15.0", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36 OPR/60.0.3255.70"],
 
         ["Safari","534.57.7","Mac OS X","10.7.5","Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko)"],
         ["Safari","3.0.4","Mac OS X","","","Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/523.12 (KHTML, like Gecko) Version/3.0.4 Safari/523.12"],
@@ -3492,6 +3519,12 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         # Sierra
         ["Safari", "10.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Safari/602.1.38"],
         ["Safari", "10.0", "Mac OS X", "10.12", "Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Safari/602.1.50"],
+        
+        ["Safari", "12.1.1", "Mac OS X", "10.13.6", "High Sierra", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15"],
+
+        ["Safari", "12.1.2", "Mac OS X", "10.14.6", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Safari/605.1.15"],
+
+        ["Safari", "12.1.2", "Mac OS X", "10.15.0", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Safari/605.1.15"],
 
         ["Yandex","1.5.1104.221","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.221 YaBrowser/1.5.1104.221 Safari/537.4"],
 
@@ -4791,6 +4824,10 @@ class UserAgentDecoderTest < Test::Unit::TestCase
 
         # Blackberry Playbook
         ['BlackBerry Browser', '536.2', 'BlackBerry PlayBook', '2.1.0', '', 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+'],
+
+        # OS/2
+        ['SeaMonkey', '2.35', 'OS/2', '4.5', '', 'Mozilla/5.0 (OS/2; Warp 4.5; rv:38.0) Gecko/20100101 Firefox/38.0 SeaMonkey/2.35'],
+
 
         # Unknown OS
         ["Firefox","14.0.1","Unknown OS", '', '', "Mozilla/5.0 (masking-agent; rv:14.0) Gecko/20100101 Firefox/14.0.1"],

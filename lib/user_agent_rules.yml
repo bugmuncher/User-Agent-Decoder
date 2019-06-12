@@ -30,6 +30,9 @@ os:
   meego:
     name: MeeGo
     regex: ['MeeGo']
+  os2:
+    name: 'OS/2'
+    regex: ['OS/2; Warp ([\d\.]+);']
   symbian: 
     name: Nokia Symbian
     regex: ['Series 60', 'Symbian', 'SymbOS', 'S60']
@@ -59,6 +62,9 @@ os:
     regex: ['X11(?:.+?(i686|x86_64))?', 'Linux']
 
 browsers:
+  aol_shield:
+    name: AOL Shield Pro
+    regex: ['AOLShield/([\d\.]+)?']
   chrome:
     name: Chrome
     regex: ['Chrome(?:frame)?\/([\d\.]+)?', 'CriOS\/([0-9\.]+)?', 'Android.+?Apple ?WebKit.+?Version\/([\d\.]+)']
@@ -104,6 +110,9 @@ browsers:
   safari:
     name: Safari
     regex: ['Version\/([\d\.]+)?.+?Safari', 'Safari\/([\d\.]+)?']
+  seamonkey:
+    name: SeaMonkey
+    regex: ['SeaMonkey/([\d\.]+)']
   silk:
     name: Silk
     regex: ['Silk\/([0-9\.]+)']
@@ -124,6 +133,7 @@ browsers:
     regex: ['AppleWebKit\/([0-9\.]+)?']
 
 # Opera first as it can spoof
+# SeaMonkey before firefox otherwise it can be reckognised as it
 # Flock before firefox and chrome otherwise it can be reckognised as them
 # Yandex before chrome as it can be seen as them
 # Chrome before safari as chrome user agent includes Safari keyword
@@ -138,8 +148,9 @@ os_browsers:
   fire_os: [silk]
   ios: [opera, chrome, firefox, mercury, safari, mobile_safari]
   java_me: [opera_mini]
-  mac: [opera, flock, yandex, chrome, firefox, dreamweaver, safari, mobile_safari]
+  mac: [opera, flock, yandex, seamonkey, chrome, firefox, dreamweaver, safari, mobile_safari]
   meego: [nokia_browser]
+  os2: [opera, seamonkey, firefox]
   symbian: [opera_mini, uc_browser, nokia_browser]
   red_hat_linux: [opera, flock, konqueror, chrome, firefox]
   ubuntu_linux: [opera, flock, konqueror, chrome, firefox]
@@ -147,7 +158,7 @@ os_browsers:
   playstation_3: [playstation_3_browser]
   web_os: [web_os_browser]
   wii: []
-  windows: [opera, flock, edge, yandex, chrome, firefox, msie, dreamweaver, safari]
+  windows: [opera, flock, seamonkey, edge, yandex, chrome, firefox, msie, dreamweaver, safari, aol_shield]
   windows_phone: [msie]
 
 os_version_names:
@@ -200,7 +211,16 @@ os_version_names:
       name: 'El Capitan' # needs to go before puma to stop 10.11 matching 10.1
     -
       version: '10\.12'
-      name: 'Sierra' # needs to go before puma to stop 10.11 matching 10.1
+      name: 'Sierra' # needs to go before puma to stop 10.12 matching 10.1
+    -
+      version: '10\.13'
+      name: 'High Sierra' # needs to go before puma to stop 10.13 matching 10.1
+    -
+      version: '10\.14'
+      name: 'Mojave' # needs to go before puma to stop 10.14 matching 10.1
+    -
+      version: '10\.15'
+      name: 'Catalina' # needs to go before puma to stop 10.15 matching 10.1
     -
       version: '10\.1'
       name: 'Puma'
