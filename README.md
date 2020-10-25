@@ -112,3 +112,6 @@ Add suport for OS X High Sierra
 
 ### v 0.0.11
 Add suport for Mac OS Mojave and Catalina. Add OS/2, SeaMonkey and AOL Shield Pro. BugMuncher is now Saber
+
+### v 0.0.12
+Add support for Mac OS Big Sur

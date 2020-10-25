@@ -3292,6 +3292,10 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         # Not a real UA, as Catalina isn't out yet
         ["Chrome", "75.0.3770.80", "Mac OS X", "10.15.0", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"],
 
+        # Big Sur
+        ["Chrome", "83.0.4103.116", "Mac OS X", "10.16.0", "Big Sur", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"],
+        ["Chrome", "85.0.4183.102", "Mac OS X", "10.16.0", "Big Sur", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"],
+        ["Chrome", "85.0.4183.121", "Mac OS X", "10.16.0", "Big Sur", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36"],
 
         ["Firefox","10.0","Mac OS X","10.5","Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.5; rv:10.0) Gecko/20100101 Firefox/10.0"],
         ["Firefox","10.0","Mac OS X","10.6","Snow Leopard","Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:10.0) Gecko/20100101 Firefox/10.0"],

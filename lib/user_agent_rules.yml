@@ -222,6 +222,9 @@ os_version_names:
       version: '10\.15'
       name: 'Catalina' # needs to go before puma to stop 10.15 matching 10.1
     -
+      version: '10\.16'
+      name: 'Big Sur' # needs to go before puma to stop 10.15 matching 10.1
+    -
       version: '10\.1'
       name: 'Puma'
     -

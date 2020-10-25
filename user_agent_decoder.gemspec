@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'user_agent_decoder'
-  s.version     = '0.0.11'
-  s.date        = '2019-06-12'
+  s.version     = '0.0.12'
+  s.date        = '2020-10-16'
   s.summary     = "User Agent Decoder"
   s.description = "Accurately parse User Agent strings using simple, cascading rules - devloped for and by Saber Website Feedback"
   s.authors     = ["Matt Bearman"]
