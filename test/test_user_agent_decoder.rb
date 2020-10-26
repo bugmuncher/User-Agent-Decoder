@@ -3532,8 +3532,7 @@ class UserAgentDecoderTest < Test::Unit::TestCase
         ["Safari", "12.1.2", "Mac OS X", "10.14.6", "Mojave", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Safari/605.1.15"],
 
         ["Safari", "12.1.2", "Mac OS X", "10.15.0", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Safari/605.1.15"],
-
-        ["Safari", "14.0.1", "Mac OS X", "10.15.6", "Big Sur", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"],
+        ["Safari", "14.0.1", "Mac OS X", "10.15.6", "Catalina", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"],
 
         ["Yandex","1.5.1104.221","Mac OS X","10.8.2","Mountain Lion","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1104.221 YaBrowser/1.5.1104.221 Safari/537.4"],
 

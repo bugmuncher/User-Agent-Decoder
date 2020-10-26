@@ -118,3 +118,6 @@ Add support for Mac OS Big Sur
 
 ### v 0.0.13
 Improve support for Mac OS Big Sur
+
+### v 0.0.14
+Fix bug where some versions of Catelina are reported as Big Sur
