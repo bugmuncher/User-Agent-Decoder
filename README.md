@@ -115,3 +115,6 @@ Add suport for Mac OS Mojave and Catalina. Add OS/2, SeaMonkey and AOL Shield Pr
 
 ### v 0.0.12
 Add support for Mac OS Big Sur
+
+### v 0.0.13
+Improve support for Mac OS Big Sur

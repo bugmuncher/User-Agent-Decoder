@@ -219,11 +219,14 @@ os_version_names:
       version: '10\.14'
       name: 'Mojave' # needs to go before puma to stop 10.14 matching 10.1
     -
+      version: '10\.15\.6'
+      name: 'Big Sur' # needs to go before catelina to stop 10.15 matching, Safari seems to report Big Sur as 10.15.6 :s
+    -
       version: '10\.15'
       name: 'Catalina' # needs to go before puma to stop 10.15 matching 10.1
     -
       version: '10\.16'
-      name: 'Big Sur' # needs to go before puma to stop 10.15 matching 10.1
+      name: 'Big Sur' # needs to go before puma to stop 10.15 matching 10.1, Some browsers report Big Sur as 11, and some as 10.16
     -
       version: '10\.1'
       name: 'Puma'
@@ -251,3 +254,6 @@ os_version_names:
     -
       version: '10\.9'
       name: 'Mavericks'
+    -
+      version: '11'
+      name: 'Big Sur' # Some browsers report Big Sur as 11, and some as 10.16
